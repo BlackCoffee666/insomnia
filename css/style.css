@@ -1,0 +1,461 @@
+body {
+    background: #e46643;
+    color: #444;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding: 0;
+    margin: 0;
+}
+div, p, a, img, form, button{
+    box-sizing: border-box; 
+    /*сво-ва width и height вкл. знач. padding и border */
+}
+a{
+    text-decoration: none;
+    /*убрать подчёркивание ссылок*/
+}
+ul, li{
+    display: block; /*для избежания проблем в различных браузерах*/
+    
+    padding: 0;
+    margin: 0; 
+}
+
+.wrapper {
+    margin: 70px auto;
+    width: 1160px;
+}
+
+
+
+/*----------------------------*/
+/* MENU */
+/*----------------------------*/
+.container {
+    display: block;
+    
+    background: #fff;
+    color: #444;
+    box-shadow: inset 0px -40px 36px rgba(0, 0, 0, 0.044);
+    /*наконец-таки, переход от серого к белому с размытием*/
+}
+.nav {
+    display: flex; /*выравнивание всех эл оболочки в одну строку*/
+    align-items: center;
+    box-shadow: 1px 15px 35px -30px #000;
+
+}
+.menu {
+    display: flex;
+    
+    margin-left: 40px;
+    
+    align-items: center;
+}
+    .menu li {
+    font-size: 12px;
+    
+    margin-right: 45px;
+    }
+    .menu li a { 
+        display: inline-block;
+        color: #444;
+
+        position: relative; 
+        padding: 10px 0;
+        
+        text-decoration: none;
+    }
+    /*--- эффекты: подчёркивание + полужирный шрифт---*/
+    .menu li a:before {
+        display: block;
+        position: absolute;
+
+        background: #444;
+        content: "";
+        
+        height: 3px;
+        width: 0;
+
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        
+        left: 50%;
+        bottom: 0;
+    }
+    .menu li a:after {
+        display: block;
+        position: absolute;
+
+        background-color: #444;
+        content: "";
+
+        height: 3px;
+        width: 0;
+        
+        transition: width 0.3s ease-in-out;
+        
+        left: 50%;
+        bottom: 0;
+    }
+    .menu li a:hover:before {
+        width: 50%;
+        left: 0;
+    }
+    .menu li a:hover:after {
+        width: 50%;
+    }
+    
+    .menu li.active a,
+    .menu li a:hover {
+        font-weight: bold;
+    }
+    
+li.title-1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+li.vertical-align {
+    border-right: 1px solid #444;
+    padding-right: 40px;
+    
+    line-height: 40px;
+}
+
+/*----------------------------*/
+/* SEARCH BOX */
+/*----------------------------*/
+.wrapper__cart{
+    height: 0;
+    width: 0;
+    padding: 25px 100px 0;
+}
+.input-wrapper {
+    width: 400px;
+    height: 80px;
+    
+    background: url(img/MagnifyingGlass.png) no-repeat 171px 31px;
+  }
+.wrapper__search {
+    width: 194px;
+   
+    margin-left: 200px;
+
+}
+  .wrapper__search:after {
+    position: absolute;
+    
+    overflow: hidden;
+    user-select: none;
+    
+    font-size: 13px;
+  }
+  input {
+    background: none;
+    color: #444;
+
+    outline: none;
+    border: none;
+    border-radius: 0;
+
+    line-height: 40px;
+
+    padding: 0;
+    width: auto;
+    min-width: 100%;
+    
+    font-size: 13px;
+  }
+
+/*------THE END: header(menu)------*/
+/*---------------------------------*/
+
+
+
+
+
+
+
+.main {
+    display: block;
+    position: relative;
+    
+    
+    height:500px;
+
+    margin-top: 40px;
+
+    color: #444;
+    background: #fff;
+    box-shadow: inset 0px -300px 90px rgba(0, 0, 0, 0.033);  
+ }
+ .middle_box {
+    height:500px;
+
+    box-shadow: 1px 15px 35px -30px #000;
+
+    background:
+    url(img/filter.png) no-repeat 100% 50% ,
+    url(img/pic.png) no-repeat 100% 50%,
+    url(img/overlay.png) no-repeat 100% 50%;
+    }
+/*---Левая часть:логотип и осн.инф.---*/
+.middle_box_content {
+    padding: 198px 627px 1px 40px;
+}
+.middle_box_content h1 {
+    font-size: 21px;
+}
+.middle_box_content p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.middle_box_logo-1 {
+    position: absolute;
+    
+    top: 50px;
+    left: 40px;
+}
+
+
+
+
+
+
+/*---------------------------------*/
+/*----------BUTTON-------------*/
+.button-1 {
+    display:block;
+
+    margin: 45px 0 40px;
+}
+.button-1__style {
+    width:150px;
+    height: 40px;
+
+    border: 1px solid rgb( 33, 126, 74 );
+    border-radius: 4px;
+    line-height: 20px;
+
+    background-color: rgb( 43, 153, 91 );
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+    
+    text-align: center;
+    padding: 8px;
+}
+.button-1__style:hover {
+    background-color: rgb( 75, 183, 141 );
+}
+a.button-1__text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    }
+/*---------------------------------*/
+/*---------------------------------*/
+
+.middle_box_logo-2 {
+    position: absolute;
+
+    top: 40px;
+    right: 40px;
+}
+
+.middle_box_content p3 {
+    position: absolute;
+
+    bottom: 30px;
+    right: 40px;
+
+    color:#fff ;
+
+    font-size: 72px;
+
+    font-family: 'lternateGothicNo2BTRegular';
+}
+
+
+
+/*---------------------------------*/
+
+
+
+
+/* Product  */
+.container-pr {
+    margin: 0 auto;
+    width: 1160px;
+}
+  
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.product-item {
+    margin: 40px 40px 0 0;
+    width: 360px;
+    height: 400px;
+}
+.product-item:last-of-type {
+    margin-right: 0;
+}
+.product-pics {
+height: 240px;
+background: 
+url(img/vans.png) no-repeat 100% 110%,
+url(img/product_image.png) no-repeat 100%;
+}
+.product-items li {
+    background: #fff;
+    box-shadow: inset 0px -300px 90px rgba(0, 0, 0, 0.033);
+}
+.product-item__details{
+    display: inline-block;   
+
+    width: 360px;
+    height: 160px;
+
+    padding: 0 30px;
+}
+
+
+h4 h5 h6 {
+    text-decoration: none;
+}
+h4 {
+    margin: 20px 0 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.property_size {
+    font-size: 12px;
+}
+.product-item__choose {
+    float: left;
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+h5 {
+    margin: 10px 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+select{
+    background: #f7f7f7;
+    color: #67a3bb;
+    border: 0;
+    padding: 5px;
+    border-radius: 0;
+    resize: none;
+}
+select{
+    outline: 0 !important;
+}
+h6 {
+    margin: 10px auto;
+    font-size: 28px;
+}
+.wrapper-line {
+    display: flex;
+
+    width: 100%;
+    height: 35%;
+}
+/*---------------------------------*/
+/*----------BUTTON-------------*/
+.product-item__button {
+    display:block;
+
+    padding: 0px 60px;
+    margin: 0 0 20px 0;
+
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+}
+.product-item__button-style{
+    width:150px;
+    height: 40px;    
+
+   background-color: #67a3bb;
+    border: 1px solid #67a3bb; 
+
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+   transition: background-color 0.1s linear;        
+}
+    .product-item__button-text  {   
+    color: #fff;
+    text-align: center;
+
+    font-size: 12px;
+    font-weight: bold;
+   }          
+    .product-item__button-style:hover {
+    background-color: #7fbbd3;
+    }
+
+    /*---------------------------------*/
+
+
+
+
+ /*-------FOOTER----------------*/
+ #footer {
+    display: block;
+    position: relative;
+
+    width: 1160px;
+    height: 50px;
+
+    margin-top: 40px;
+
+    box-shadow: 1px 15px 35px -20px #000;
+
+    color:#999;
+    background-color: #f8f8f8;
+}
+.footer-block {
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+}
+.footer-block li {
+    font-size: 12px;
+    
+    margin-right: 755px;
+    margin-top: 10px;
+    }
+    li.title-2 {
+        font-weight: bold;
+        color: #333;
+    }
+    li.vertical-align-2 {
+    border-right: 1px solid #b5b5b5;
+    padding-right: 40px;
+    
+    line-height: 24px;
+    }
+.footer_links{
+    float:right;
+    padding: 18px 45px 0 0;
+}
+.footer_links a {
+
+    display: inline-block;
+    margin-left: 21px;
+}
+
+@font-face {
+    font-family: 'lternateGothicNo2BTRegular';
+
+    src: url('fonts/lternateGothicNo2BTRegular/lternateGothicNo2BTRegular.eot'),
+    url('fonts/lternateGothicNo2BTRegular/lternateGothicNo2BTRegular.woff') format('woff'),
+    url('fonts/lternateGothicNo2BTRegular/lternateGothicNo2BTRegular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
