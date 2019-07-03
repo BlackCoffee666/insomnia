@@ -108,6 +108,7 @@ ul, li{
 li.title-1 {
     font-size: 16px;
     font-weight: bold;
+    user-select: none;
 }
 li.vertical-align {
     border-right: 1px solid #444;
@@ -120,11 +121,12 @@ li.vertical-align {
     width: 400px;
     height: 80px;
   }
+  /* shopping cart */
 .input-wrapper__cart{
-    position: absolute;
-    margin: 24px auto;
-    right: 170px;
+    margin: 24px 20px;
+    float: right;
 }
+
 .input-wrapper__s-icon{
     position: absolute;
 
@@ -427,6 +429,7 @@ h6 {
     li.title-2 {
         font-weight: bold;
         color: #333;
+        user-select: none;
     }
     li.vertical-align-2 {
     border-right: 1px solid #b5b5b5;
@@ -453,3 +456,4 @@ h6 {
     font-weight: normal;
     font-style: normal;
 }
+img { border: 0; }
