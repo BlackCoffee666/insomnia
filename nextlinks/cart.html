@@ -4,10 +4,11 @@
      <title>End Of The World!</title>
      <meta charset="UTF-8">
      <link rel="stylesheet" type="text/css" href="css/style1.css">
+     <script src="js/main.js"></script>
 </head>
 <!-- осн.элементы: header(menu), main(inf-block-1, product-block-2), footer(block-links) -->
 <body>
-<!---------- HEADER MENU---------->
+<!--HEADER MENU-->
 <div class="wrapper">
       <div class="container">       
         <nav class="nav">
@@ -22,17 +23,20 @@
             </ul>
 
             <div class="input-wrapper__input">
-                <div class="input-wrapper__cart">
-                      <a href="nextlinks/cart.html"><img src="css/img/shopping_cart.png" width="30" height="30"/></a>
-                </div>
                     <div class="input-wrapper__s-icon">
-                        <input type="search-element-1" class="s-icon__circle">
-                        <button type="search-element-2" class="s-icon__line"></button>
+                            <input class="s-icon__circle">
+                            <button class="s-icon__line"></button>
                     </div>
-                <div class="input-wrapper__search">
-                     <input type="text" name="search" placeholder="Search..."/> 
+                    <div class="input-wrapper__search">
+                         <input type="text" name="search" placeholder="Search..."/> 
+                    </div>
+                <!--SHOPPING CART-->
+                <div class="input-wrapper__cart">
+                        <a href="nextlinks/cart.html"><img src="css/img/shopping_cart.png" alt="" width="30" height="30"/></a>
+                        
+                <!--The END: SHOPPING CART-->
                 </div>
-           </div>
+            </div>
 
         </nav> 
       </div>
@@ -43,11 +47,7 @@
               <h1>
                 Shopping Bag
               </h1>
- 
-  
 
-                  
-  
           </div>
         </div>
     </div>
@@ -55,20 +55,20 @@
 
 <!----------FOOTER---------->
 <div id="footer">
-    <ul class="footer-block">
-        <li class="vertical-align-2 title-2">Ecommerce Elements</li>
+  <ul class="footer-block">
+      <li class="vertical-align-2 title-2">Ecommerce Elements</li>
 
-    	<div class="footer_links">
-        <!-- target="_blank" - открывает ссылку в новой вкладке -->
-        <a href="https://twitter.com" target="_blank"><img src="css/img/twitter.png" alt="csstemplatesmarket" border="0" /></a>
-        <a href="https://www.facebook.com" target="_blank"><img src="css/img/facebook.png" alt="csstemplatesmarket" border="0" /></a>
-        <a href="https://vimeo.com" target="_blank"><img src="css/img/vimeo.png" alt="csstemplatesmarket" border="0" /></a>
-        <a href="https://www.pinterest.ru" target="_blank"><img src="css/img/pinterest.png" alt="csstemplatesmarket" border="0" /></a>
+    <div class="footer_links">
+      <!-- target="_blank" - открывает ссылку в новой вкладке -->
+      <a href="https://twitter.com" target="_blank"><img src="css/img/twitter.png" alt=""/></a>
+      <a href="https://www.facebook.com" target="_blank"><img src="css/img/facebook.png" alt=""/></a>
+      <a href="https://vimeo.com" target="_blank"><img src="css/img/vimeo.png" alt=""/></a>
+      <a href="https://www.pinterest.ru" target="_blank"><img src="css/img/pinterest.png" alt=""/></a>
 
-      </div>
-    </ul>
+    </div>
+  </ul>
 </div>
-<!----------THE END: FOOTER---------->
+<!--THE END: FOOTER-->
 
 </div>
 </body>
